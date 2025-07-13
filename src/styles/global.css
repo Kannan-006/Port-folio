@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #10b981;
+  --primary-glow: #10b98133;
+  --secondary-color: #8b5cf6;
+  --secondary-glow: #8b5cf633;
+  --dark-bg: #0f172a;
+  --card-bg: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --neon-border: 0 0 10px var(--primary-glow), 0 0 20px var(--primary-glow);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.section {
+  min-height: 100vh;
+  padding-top: 80px;
+  scroll-margin-top: 80px;
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--neon-border);
+}
+
+.skill-bar {
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+.neon-button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 24px;
+  color: var(--primary-color);
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 2px;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+}
+
+.neon-button:hover {
+  background: var(--primary-color);
+  color: var(--dark-bg);
+  box-shadow: var(--neon-border);
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: var(--text-primary);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+  background-color: var(--primary-color);
+}
+
+.form-input {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px var(--primary-glow);
+}
+
+.loader-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  border-top-color: var(--primary-color);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.theme-switch {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.theme-switch-handle {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.theme-switch.light .theme-switch-handle {
+  transform: translateX(30px);
+}
+
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: block;
+  }
+  
+  .mobile-menu-items {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    background-color: var(--card-bg);
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    border-radius: 0 0 0 12px;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .mobile-menu-items.show {
+    transform: translateX(0);
+  }
+}
+
+/* Resume Viewer Styles */
+.resume-viewer {
+  transition: all 0.3s ease-out;
+}
+
+.resume-viewer-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.resume-viewer-enter-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.resume-viewer-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.resume-viewer-exit-active {
+  opacity: 0;
+  transform: scale(0.95);
+}
