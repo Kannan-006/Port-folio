@@ -10,11 +10,11 @@ const Home = () => {
               Hi, I'm <span className="bg-gradient-to-r from-emerald-400 to-violet-500 bg-clip-text text-transparent">Kannan N</span>
             </h1>
             <h2 className="text-2xl md:text-3xl text-slate-300 mb-6">Full Stack Web Developer</h2>
-            <h1><span className="text-blue-500 text-2xl"> Tech Stack:</span> React.Js, TailwindCss,  Node.Js, Express.Js, MongoDB</h1>
+            <h1><span className="text-blue-500 text-2xl"> Tech Stack:</span> HTML5, CSS3, JavaScript, Frappe Framework, Python, SQL </h1>
             
             <p className="text-slate-400 text-lg mt-5">
-              I build modern web applications with React, Node.js, Express, and MongoDB.
-              Passionate about creating intuitive user experiences and scalable backend solutions.
+              I build modern web applications using React, Frappe, HTML5, CSS3, and SQL. 
+              Passionate about creating intuitive user experiences and developing efficient, scalable web solutions.
             </p>
           </div>
 

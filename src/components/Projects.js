@@ -1,41 +1,41 @@
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
-import wordbattle from "../images/wordbattle.png"
-import netflix from "../images/netflix.png"
-import synonym from "../images/synonym.png"
+import wordbattle from "../images/prephub.png"
+import green from "../images/greenden.png"
+import coffee from "../images/coffehaven.png"
 import nextweb from "../images/nextweb.png"
 import weather from "../images/weather.png"
 const Projects = () => {
   const projects = [
     {
-      title: "Word Battle",
-      description: "A fast-paced multiplayer word game where players compete in real-time to create the highest-scoring words.",
+      title: "Prep Hub",
+      description: "A quiz app that challenges users with word puzzles, offering an engaging and educational experience.",
       image: wordbattle,
-      tags: ["React", "Firebase","Redux","hosted on Firebase."],
-      demoLink: "https://word-battle-38789.web.app/",
-      codeLink: "#"
+      tags: ["HTML5", "CSS3","JS","Vercel for deployment."],
+      demoLink: "https://prep-hub-flax.vercel.app/",
+      codeLink: "https://github.com/Kannan-006/PrepHub.git"
     },
         {
-      title: "Netflix-Clone",
-      description: "A responsive streaming platform replica with movie showcases, trailers, and sleek UI.",
-      image: netflix,
-      tags: ["React","Tailwindcss","Node.js","Vercel for hosting."],
-      demoLink: "https://netflix-clone-jade-eight.vercel.app/",
-      codeLink: "https://github.com/Kannan-006/Netflix-clone"
+      title: "Greenden",
+      description: "Developed GreenDen, a responsive website as part of my web development learning journey, focusing on modern UI design, responsive layouts, and frontend development best practices..",
+      image: green,
+      tags: ["HTML5","CSS3","JS","Vercel for deployment."],
+      demoLink: "https://greendan.vercel.app/",
+      codeLink: "https://github.com/Kannan-006/Greendan.git"
     },
  
        {
-      title: "Synonym Antonym Game",
-      description: "Synonym Speed Game: A fast-paced word challenge where players race to match synonyms against the clock!",
-      image: synonym,
-      tags: ["React", "Tailwindcss","Framer Motion","Vercel for deployment."],
-      demoLink: "https://synonym-speed-game.vercel.app/",
-      codeLink: "#"
+      title: "Coffee Haven",
+      description: "A cozy online coffee shop where customers can browse and purchase their favorite blends.",
+      image: coffee,
+      tags: ["HTML5", "Css3","js","Vercel for deployment."],
+      demoLink: "https://coffee-haven-tan.vercel.app/",
+      codeLink: "https://github.com/Kannan-006/CoffeeHaven.git"
     },
         {
       title: "NextWeb",
       description: "A modern, fast web application built with React.js for seamless user experiences",
       image: nextweb,
-      tags: ["React", "Tailwindcss","and Vercel for deployment"],
+      tags: ["React.js", "Tailwindcss","Vercel for deployment"],
       demoLink: "https://next-web-czid.vercel.app/",
       codeLink: "https://github.com/Kannan-006/NextWeb"
     },

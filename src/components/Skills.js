@@ -6,11 +6,12 @@ const Skills = () => {
       title: "Frontend Development",
       icon: <FaCode className="text-xl" />,
       skills: [
-        { name: "React.js", percentage: 70 },
-        { name: "JavaScript (ES6+)", percentage: 75 },
-        { name: "HTML5 & CSS3", percentage: 95 },
-        { name: "Tailwind CSS", percentage: 85 },
-        { name: "Responsive Web Design",percentage:85 },
+        { name: "React.js", percentage: 60 },
+        { name: "JavaScript (ES6+)", percentage: 60 },
+        { name: "HTML5 & CSS3", percentage: 80 },
+        { name: "Tailwind CSS", percentage: 65 },
+        { name: "Responsive Web Design",percentage:70 },
+        { name: "Frappe Framework", percentage: 65 }
       ],
       gradient: "from-blue-400 to-blue-600"
     },
@@ -18,10 +19,11 @@ const Skills = () => {
       title: "Backend Development",
       icon: <FaServer className="text-xl" />,
       skills: [
-        { name: "Node.js", percentage: 90 },
-        { name: "Express.js", percentage: 85 },
-        { name: "MongoDB", percentage: 80 },
-        { name: "REST API Design", percentage: 85 }
+        { name: "Python", percentage: 50 },
+        { name: "Node.js", percentage: 45 },
+        { name: "Mariadb | SQL", percentage: 60 },
+        { name: "REST API Design", percentage: 50 }
+       
       ],
       gradient: "from-green-400 to-green-600"
     },
@@ -29,12 +31,11 @@ const Skills = () => {
       title: "Tools & Others",
       icon: <FaTools className="text-xl" />,
       skills: [
-        { name: "Git & GitHub", percentage: 90 },
-        { name: "Webpack/Vite", percentage: 85 },
+        { name: "Git & GitHub", percentage: 65 },
+        { name: "Webpack/Vite", percentage: 50 },
         { name: "Vs Code", percentage: 75 },
         { name: "Figma", percentage: 80 },
-        { name: "Wireframing & Prototyping", percentage: 80 },
-        { name: "Photoshop", percentage: 50 },
+        { name: "Wireframing & Prototyping", percentage: 60 }
       ],
       gradient: "from-purple-400 to-purple-600"
     }
@@ -47,7 +48,7 @@ const Skills = () => {
           <span className="bg-gradient-to-r from-emerald-400 to-violet-500 bg-clip-text text-transparent">Skills</span>
         </h2>
         <p className="text-slate-400 text-center mb-12 max-w-5xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-          I specialize in the MERN stack with expertise in various modern web technologies and tools.
+          Passionate Web Developer skilled in building responsive and interactive web applications using modern web technologies.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 p-2 min-h-96">
