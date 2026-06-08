@@ -1,7 +1,7 @@
 import { FiDownload } from 'react-icons/fi';
 
 const Resume = () => {
-  const resumeImage = '/Resume.jpg'; 
+  const resumeImage = '/Resume.png'; 
 
   return (
     <section id="Resume" className="section py-20">
