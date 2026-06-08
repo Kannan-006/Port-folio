@@ -1,5 +1,4 @@
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import nexcap from "../images/Nexcap cert.jpg"
 import infosys from "../images/infosys cert.jpg"
 import Geekster from "../images/Geekster cert.jpg"
 import nptel from "../images/swayam certificate.png"

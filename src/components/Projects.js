@@ -84,10 +84,10 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="flex justify-between">
-                  <a href={project.demoLink} target='_blank' className="text-emerald-400 hover:text-emerald-300 transition-colors">
+                  <a href={project.demoLink} target='_blank' rel="noreferrer" className="text-emerald-400 hover:text-emerald-300 transition-colors">
                     <FaExternalLinkAlt className="inline mr-2" /> Demo
                   </a>
-                  <a href={project.codeLink} target='_blank' className="text-violet-400 hover:text-violet-300 transition-colors">
+                  <a href={project.codeLink} target='_blank' rel="noreferrer" className="text-violet-400 hover:text-violet-300 transition-colors">
                     <FaGithub className="inline mr-2" /> Code
                   </a>
                 </div>

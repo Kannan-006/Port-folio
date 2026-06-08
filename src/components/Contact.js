@@ -57,6 +57,7 @@ const Contact = () => {
                     <p className="text-slate-300 font-medium">Email</p>
                     <a
                       href="mailto:kannannagappan55@gmail.com"
+                      rel="noreferrer"
                       className="text-slate-400 hover:text-emerald-400 transition-colors"
                     >
                       kannannagappan55@gmail.com
@@ -72,6 +73,7 @@ const Contact = () => {
                     <p className="text-slate-300 font-medium">Phone</p>
                     <a
                       href="tel:+917639564969"
+                      rel="noreferrer"
                       className="text-slate-400 hover:text-emerald-400 transition-colors"
                     >
                       +91 76395 64969
